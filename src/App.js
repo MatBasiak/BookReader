@@ -8,10 +8,13 @@ import { debounce } from "lodash.debounce";
 import "./App.css";
 
 class App extends Component {
-  printProps() {
-    console.log(this.props.books);
-  }
-
+  printProps = () => {
+    let items = this.props.books.items;
+    console.log(items[0].volumeInfo.title)
+    console.log(items[0].volumeInfo.authors)
+    console.log(items[0].volumeInfo.description)
+    console.log(items[0].volumeInfo.imageLinks.thumbnail)
+  };
   getKeywords = e => {
     let key = e.target.value;
     this.props.booksList(key);
@@ -29,7 +32,7 @@ class App extends Component {
   }
 }
 const mapStateToProps = state => {
-  console.log(state)
+  console.log("app", state);
   return {
     books: state.booksList.books
   };
