@@ -1,19 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Search from "./components/search";
 import { bindActionCreators } from "redux";
 import { booksList } from "./actions";
+import Search from "./components/search";
+import BooksList from "./components/booksList";
 
 import "./App.css";
 
 class App extends Component {
-  printProps = () => {
-    let items = this.props.books.items;
-    console.log(items[0].volumeInfo.title);
-    console.log(items[0].volumeInfo.authors);
-    console.log(items[0].volumeInfo.description);
-    console.log(items[0].volumeInfo.imageLinks.thumbnail);
-  };
+  
+
   getKeywords = e => {
     let key = e.target.value;
     this.props.booksList(key);
@@ -22,9 +18,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Search keywords={this.getKeywords} />
-        <button onClick={this.printProps}>klick me</button>
-        <h2>booklist</h2>
+        <Search keywords={this.getKeywords} />      
+        <BooksList books={this.props.books.items}/>
         <h2>chossenbook</h2>
       </div>
     );
