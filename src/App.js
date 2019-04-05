@@ -3,17 +3,16 @@ import { connect } from "react-redux";
 import Search from "./components/search";
 import { bindActionCreators } from "redux";
 import { booksList } from "./actions";
-import { debounce } from "lodash.debounce";
 
 import "./App.css";
 
 class App extends Component {
   printProps = () => {
     let items = this.props.books.items;
-    console.log(items[0].volumeInfo.title)
-    console.log(items[0].volumeInfo.authors)
-    console.log(items[0].volumeInfo.description)
-    console.log(items[0].volumeInfo.imageLinks.thumbnail)
+    console.log(items[0].volumeInfo.title);
+    console.log(items[0].volumeInfo.authors);
+    console.log(items[0].volumeInfo.description);
+    console.log(items[0].volumeInfo.imageLinks.thumbnail);
   };
   getKeywords = e => {
     let key = e.target.value;
@@ -32,7 +31,6 @@ class App extends Component {
   }
 }
 const mapStateToProps = state => {
-  console.log("app", state);
   return {
     books: state.booksList.books
   };
