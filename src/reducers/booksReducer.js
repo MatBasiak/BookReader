@@ -1,6 +1,6 @@
 export default function reducer(
   state = {
-    books: ['pusty'],
+    books: [],
     fetching: false,
     fetched: false,
     error: null

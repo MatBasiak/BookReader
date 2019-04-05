@@ -4,12 +4,9 @@ import { bindActionCreators } from "redux";
 import { booksList } from "./actions";
 import Search from "./components/search";
 import BooksList from "./components/booksList";
-
-import "./App.css";
+import "../src/css/App.scss";
 
 class App extends Component {
-  
-
   getKeywords = e => {
     let key = e.target.value;
     this.props.booksList(key);
@@ -18,8 +15,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Search keywords={this.getKeywords} />      
-        <BooksList books={this.props.books.items}/>
+        <Search keywords={this.getKeywords} />
+        <BooksList books={this.props.books.items} />
         <h2>chossenbook</h2>
       </div>
     );
