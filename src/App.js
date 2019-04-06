@@ -17,7 +17,7 @@ class App extends Component {
       <div className="app__wrapper">
         <Search keywords={this.getKeywords} />
         <BooksList books={this.props.books.items} />
-        <footer>""</footer>
+        
       </div>
     );
   }
