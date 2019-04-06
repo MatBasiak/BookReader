@@ -1,14 +1,14 @@
 {
-  "main.css": "/BookReader/static/css/main.484729a5.chunk.css",
-  "main.js": "/BookReader/static/js/main.97aa1332.chunk.js",
-  "main.js.map": "/BookReader/static/js/main.97aa1332.chunk.js.map",
+  "main.css": "/BookReader/static/css/main.a49f2b02.chunk.css",
+  "main.js": "/BookReader/static/js/main.c38aa9d4.chunk.js",
+  "main.js.map": "/BookReader/static/js/main.c38aa9d4.chunk.js.map",
   "runtime~main.js": "/BookReader/static/js/runtime~main.f3737d11.js",
   "runtime~main.js.map": "/BookReader/static/js/runtime~main.f3737d11.js.map",
   "static/js/2.4e512a31.chunk.js": "/BookReader/static/js/2.4e512a31.chunk.js",
   "static/js/2.4e512a31.chunk.js.map": "/BookReader/static/js/2.4e512a31.chunk.js.map",
   "index.html": "/BookReader/index.html",
-  "precache-manifest.79e1eefa229e8c9476b70ad74bfeaa17.js": "/BookReader/precache-manifest.79e1eefa229e8c9476b70ad74bfeaa17.js",
+  "precache-manifest.3acbc0f7450a5d6374f15cf989008999.js": "/BookReader/precache-manifest.3acbc0f7450a5d6374f15cf989008999.js",
   "service-worker.js": "/BookReader/service-worker.js",
-  "static/css/main.484729a5.chunk.css.map": "/BookReader/static/css/main.484729a5.chunk.css.map",
+  "static/css/main.a49f2b02.chunk.css.map": "/BookReader/static/css/main.a49f2b02.chunk.css.map",
   "static/media/App.scss": "/BookReader/static/media/no-image.57da1720.jpg"
 }
