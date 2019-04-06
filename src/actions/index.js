@@ -5,7 +5,7 @@ export function booksList(key) {
   return function(dispatch) {
     dispatch({ type: "FETCHING_BOOKS" });
     axios
-      .get(`${URL}q=${key}&maxResults=6`)
+      .get(`${URL}q=${key}&maxResults=10`)
       .then(response => {
         dispatch({ type: "FETCHING_BOOKS_FULFILLED", payload: response.data });
       })

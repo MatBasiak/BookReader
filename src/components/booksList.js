@@ -7,7 +7,15 @@ export default class BooksList extends Component {
 
   listRender = books => {
     return books.map((book, i) => (
-      <div key={i}>
+      <div className={"book__wrapper"} key={i}>
+        {book.volumeInfo.imageLinks ? (
+          <img
+            src={book.volumeInfo.imageLinks.smallThumbnail}
+            alt={book.volumeInfo.title}
+          />
+        ) : (
+         <div className={"noImage"}></div>
+        )}
         <h2>{book.volumeInfo.title}</h2>
         <h3>{book.volumeInfo.authors}</h3>
         <div>
@@ -16,12 +24,6 @@ export default class BooksList extends Component {
             : null}
           ...
         </div>
-        {book.volumeInfo.imageLinks ? (
-          <img
-            src={book.volumeInfo.imageLinks.smallThumbnail}
-            alt={book.volumeInfo.title}
-          />
-        ) : null}
       </div>
     ));
   };
@@ -29,8 +31,8 @@ export default class BooksList extends Component {
   render() {
     return (
       <div>
-        {this.props.books ? <h1>data loaded</h1> : <h1>loading data</h1>}
-        <div>{this.props.books ? this.listRender(this.props.books) : null}</div>
+       
+        <div className={"bookList__wrapper"}>{this.props.books ? this.listRender(this.props.books) : null}</div>
       </div>
     );
   }

@@ -14,10 +14,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app__wrapper">
         <Search keywords={this.getKeywords} />
         <BooksList books={this.props.books.items} />
-        <h2>chossenbook</h2>
+        <footer>stopka</footer>
       </div>
     );
   }

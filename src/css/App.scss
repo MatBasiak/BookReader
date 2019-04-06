@@ -1,6 +1,62 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.app__wrapper {
+  background-image: url("../images/background.jpg");
+  background-size:cover ; 
+  background-position: center;
+  text-align: center;  
+  background-color:rgba(212, 209, 209, 0.644);
+  min-height: 100vh;
 }
 
-
-
+.search_container{
+  
+  h2{
+    color: antiquewhite;
+    padding:25px;
+    font-size: 35px
+  }
+  .input{
+    height: 50px;
+    width: 300px;
+    font-size: 40px;
+    background-color:rgba(212, 209, 209, 0.644);
+    color: gray;
+    border: none;
+    border-bottom: 2px solid wheat;
+    text-transform: capitalize;
+    &:focus{
+      background-color:white;
+    }
+  }
+}
+.bookList__wrapper {
+  margin: 50px; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(175, 175, 175, 0.8);
+}
+.book__wrapper {
+  height: 30rem;
+  width: 30rem;
+  
+  background-color:rgba(128, 124, 124, 0.5);
+  margin: 10px;
+  img{
+    margin: 10px;
+  }
+  .noImage{
+    
+    background-image: url("../images/no-image.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 150px;
+    height: 200px;
+    margin: 10px auto;
+  }
+}
