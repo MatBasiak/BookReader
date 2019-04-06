@@ -6,7 +6,7 @@ const Search = props => {
     <div className="search_container">
       <h2> Podaj tytuł Ksiązki</h2>
       <DebounceInput
-      className={"input"}
+        className={"input"}
         minLength={2}
         debounceTimeout={700}
         onChange={event => props.keywords(event)}

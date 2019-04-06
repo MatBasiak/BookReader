@@ -14,7 +14,7 @@ export default class BooksList extends Component {
             alt={book.volumeInfo.title}
           />
         ) : (
-         <div className={"noImage"}></div>
+          <div className={"noImage"} />
         )}
         <h2>{book.volumeInfo.title}</h2>
         <h3>{book.volumeInfo.authors}</h3>
@@ -31,8 +31,9 @@ export default class BooksList extends Component {
   render() {
     return (
       <div>
-       
-        <div className={"bookList__wrapper"}>{this.props.books ? this.listRender(this.props.books) : null}</div>
+        <div className={"bookList__wrapper"}>
+          {this.props.books ? this.listRender(this.props.books) : null}
+        </div>
       </div>
     );
   }
